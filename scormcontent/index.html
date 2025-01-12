@@ -52,7 +52,7 @@
                 var script = document.createElement('script')
                 script.onload = resolve
                 script.onerror = reject
-                script.src = 'lib/' + manifest['.js'][idx]
+                script.src = manifest['.js'][idx]
                 document.body.appendChild(script)
               }))
             }
